@@ -1,17 +1,24 @@
 /*   COMMON    */
+:root {
+  --dark1: #111111;
+  --dark2: #555555;
+  --dark4: #999999;
+  --pink: #ff3998;
+}
 
 body {
   box-sizing: border-box;
   font-family: Inter, sans-serif;
-  color: #111111;
+  color: var(--dark1);
   margin: 0;
-  padding: 32px;
 }
 
 .container {
+  box-sizing: border-box;
   min-width: 364px;
   max-width: 1280px;
-  /* margin: 0 auto; */
+  margin: 0 auto;
+  padding: 32px;
 }
 
 .flex-centered {
@@ -19,8 +26,8 @@ body {
   justify-content: center;
   align-items: center;
 }
-/* 
-section {
+
+/* section {
   border: 1px solid violet;
 } */
 
@@ -39,6 +46,14 @@ section {
   line-height: 150%;
 }
 
+p {
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--dark2);
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
 /* ### HEADER ### */
 
 .header {
@@ -73,12 +88,12 @@ section {
 }
 
 .header__nav li:last-of-type {
-  color: #ff3998;
+  color: var(--pink);
 }
 
 .header__burger {
   font-size: 22px;
-  color: #999999;
+  color: var(--dark4);
 }
 
 /* $$$ HERO $$$ */
@@ -86,8 +101,9 @@ section {
 .hero {
   height: 448px;
   margin-top: 42px;
-  /* display: flex;
-  align-items: flex-end; */
+  margin-bottom: 80px;
+  display: flex;
+  align-items: flex-end;
 }
 
 .hero__text {
@@ -98,7 +114,7 @@ section {
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.1em;
-  color: #ff3998;
+  color: var(--pink);
   margin: 0;
 }
 
@@ -106,15 +122,6 @@ section {
   font-size: 48px;
   font-weight: 900;
   margin: 24px 0;
-}
-
-.hero__text p {
-  font-size: 20px;
-  line-height: 150%;
-  color: #555555;
-  font-style: normal;
-  font-weight: 400;
-  margin: 0;
 }
 
 .hero__text button {
@@ -132,3 +139,32 @@ section {
 /* .hero__graphic img {
   width: 50%;
 } */
+
+/* $$$ UPSELL $$$ */
+.upsell {
+  background: linear-gradient(
+    59deg,
+    rgba(246, 65, 132, 1) 0%,
+    rgba(255, 153, 10, 1) 50%,
+    rgba(249, 157, 16, 1) 80%,
+    rgba(107, 245, 165, 1) 100%
+  );
+}
+.upsell .container {
+  height: 326px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.upsell h2 {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.upsell p {
+  color: var(--dark1);
+}
