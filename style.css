@@ -1,3 +1,5 @@
+/*   COMMON    */
+
 body {
   box-sizing: border-box;
   font-family: Inter, sans-serif;
@@ -9,17 +11,32 @@ body {
 .container {
   min-width: 364px;
   max-width: 1280px;
-  margin: 0 auto;
-}
-
-img {
-  max-width: 100%;
+  /* margin: 0 auto; */
 }
 
 .flex-centered {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+/* 
+section {
+  border: 1px solid violet;
+} */
+
+.button {
+  width: 188px;
+  height: 75px;
+  border-width: 4px;
+  border-style: solid;
+  border-color: orange;
+  border-radius: 50px;
+  background-color: white;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
 }
 
 /* ### HEADER ### */
@@ -48,10 +65,11 @@ img {
   padding: 0;
   height: 20px;
 }
+
 .header__nav li {
   display: inline-block;
   font-size: 20px;
-  line-height: 20pz;
+  line-height: 20px;
 }
 
 .header__nav li:last-of-type {
@@ -62,3 +80,55 @@ img {
   font-size: 22px;
   color: #999999;
 }
+
+/* $$$ HERO $$$ */
+
+.hero {
+  height: 448px;
+  margin-top: 42px;
+  /* display: flex;
+  align-items: flex-end; */
+}
+
+.hero__text {
+  width: 274px;
+}
+
+.hero__text h5 {
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.1em;
+  color: #ff3998;
+  margin: 0;
+}
+
+.hero__text h1 {
+  font-size: 48px;
+  font-weight: 900;
+  margin: 24px 0;
+}
+
+.hero__text p {
+  font-size: 20px;
+  line-height: 150%;
+  color: #555555;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+.hero__text button {
+  margin-top: 32px;
+}
+
+/* .hero__graphic {
+  width: 190px;
+  height: 278px;
+  align-self: flex-start;
+  text-align: right;
+  overflow: visible;
+} */
+
+/* .hero__graphic img {
+  width: 50%;
+} */
