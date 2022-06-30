@@ -300,20 +300,29 @@ h3 img {
 
 .footer-upsell {
   border-top: 2px solid var(--light2);
-  border-bottom: 2px solid var(--light2);
   position: relative;
 }
 
-.footer-upsell::after {
+.footer-upsell::before {
   content: "";
   position: absolute;
-  top: 84px;
+  top: 82px;
   left: 30px;
   width: 100%;
   height: 100%;
   background-image: url(./img/upsell-footer-image.svg);
   background-repeat: no-repeat;
   background-position: right;
+}
+
+.footer-upsell::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 52%;
+  border-bottom: 2px solid #11111111;
 }
 
 .footer-upsell__text {
@@ -326,7 +335,56 @@ h3 img {
   font-size: 56px;
   line-height: 68px;
 }
-.line {
-  border-bottom: 2px solid var(--light2);
-  margin-left: -32px;
+
+.footer-bottom {
+  border-top: 2px solid var(--light2);
+  padding-top: 64px;
+}
+
+.footer-bottom__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-bottom__text-top {
+  margin-bottom: 64px;
+}
+
+.footer-bottom__text-top p {
+  line-height: 100%;
+  margin-top: 30px;
+  margin-bottom: 32px;
+}
+
+.footer-bottom__text-top i {
+  color: var(--dark4);
+  font-size: 18px;
+  margin-right: 14px;
+}
+.footer-bottom__text-middle {
+  display: flex;
+  gap: 40px 78px;
+  flex-wrap: wrap;
+}
+.footer-bottom__text-middle > * {
+  width: 94px;
+}
+
+.footer-bottom__text-middle h5 {
+  color: var(--dark2);
+  margin-bottom: 23px;
+}
+
+.footer-bottom_last {
+  display: flex;
+  justify-content: space-between;
+  margin: 64px 0 73px 0;
+}
+.footer-bottom_last p {
+  color: var(--dark4);
+  line-height: 100%;
+}
+
+.footer-bottom_last-right {
+  display: none;
 }
