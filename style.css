@@ -18,8 +18,7 @@ body {
 
 .container {
   box-sizing: border-box;
-  padding: 32px;
-  /* min-width: 364px; */
+  padding: 2rem;
   max-width: 1280px;
   margin: 0 auto;
 }
@@ -72,6 +71,7 @@ h1 {
   font-size: 48px;
   font-weight: 900;
   margin: 24px 0;
+  line-height: 58px;
 }
 
 h2 {
@@ -79,7 +79,7 @@ h2 {
   font-size: 40px;
   line-height: 48px;
   margin-top: 0;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 h3 {
@@ -109,6 +109,7 @@ h6 {
 
 a {
   color: inherit;
+  height: 36px;
 }
 /* ### HEADER ### */
 
@@ -120,7 +121,6 @@ a {
   display: flex;
   justify-content: space-between;
   align-content: center;
-  height: 36px;
 }
 
 .header__nav {
@@ -155,11 +155,8 @@ a {
 /* $$$ HERO $$$ */
 
 .hero {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  display: flex;
-  align-items: flex-end;
-  overflow: hidden;
+  padding-top: 48px;
+  padding-bottom: 48px;
   position: relative;
 }
 
@@ -183,6 +180,7 @@ a {
 /* $$$ UPSELL $$$ */
 
 .upsell {
+  margin: 32px auto;
   background-image: url("./img/background.svg");
   background-position: center;
   background-size: cover;
@@ -208,7 +206,11 @@ a {
     "logo1 logo2"
     "logo3 logo5";
   align-items: center;
-  gap: 28px 68px;
+  gap: 27px 68px;
+}
+
+.press > * {
+  height: 46px;
 }
 
 .press__logo--1 {
@@ -232,6 +234,7 @@ a {
 /* $$$ SHOWCASE $$$ */
 
 .showcase {
+  padding-top: 24px;
   width: 100%;
   overflow: hidden;
 }
@@ -240,8 +243,8 @@ a {
   display: flex;
   gap: 40px;
   justify-content: space-between;
-  margin-top: 56px;
-  margin-bottom: 92px;
+  margin-top: 40px;
+  margin-bottom: 60px;
 }
 
 .showcase__cardbase-card {
@@ -374,7 +377,7 @@ h3 img {
 
 .footer-bottom__text-middle h5 {
   color: var(--dark2);
-  margin-bottom: 23px;
+  margin-bottom: 28px;
 }
 
 .footer-bottom_last {
