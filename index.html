@@ -6,13 +6,209 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="rem.css" />
     <title>nftlanding</title>
   </head>
-  <body></body>
+  <body>
+    <!-- ### HEADER ### -->
+    <header class="header container">
+      <div class="header__logo flex-centered">
+        <a href="#"><img src="./img/logo.svg" alt="" /></a>
+      </div>
+
+      <nav class="header__nav flex-centered">
+        <ul class="flex-centered">
+          <li>Features</li>
+          <li>About</li>
+          <li>Launch</li>
+          <li>Sign Up</li>
+        </ul>
+      </nav>
+      <div class="header__burger flex-centered">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <!-- +++ MAIN +++ -->
+    <main>
+      <!-- $$$ HERO $$$ -->
+      <section class="hero container">
+        <div class="hero__text">
+          <h5>LAUNCHING SOON</h5>
+          <h1>An NFT like no other</h1>
+          <p>
+            Don’t miss out on the release of our new NFT. Sign up below to
+            receive updates when we go live.
+          </p>
+          <button class="button">Sign Up</button>
+        </div>
+        <!-- <div class="hero__graphic">
+          <img src="./img/graphic.png" alt="" />
+        </div> -->
+      </section>
+
+      <!-- $$$ UPSELL $$$ -->
+      <section class="upsell">
+        <div class="container">
+          <h2>Free NFT for early birds</h2>
+          <p>Sign up today and you’ll get a free NFT when we launch.</p>
+        </div>
+      </section>
+      <!-- $$$ PRESS $$$ -->
+      <section class="press container">
+        <div class="press__logo--1"><img src="./img/1.svg" alt="" /></div>
+        <div class="press__logo--2"><img src="./img/2.svg" alt="" /></div>
+        <div class="press__logo--3"><img src="./img/3.svg" alt="" /></div>
+        <div class="press__logo--4"><img src="./img/4.svg" alt="" /></div>
+        <div class="press__logo--5"><img src="./img/5.svg" alt="" /></div>
+      </section>
+      <!-- $$$ SHOWCASE $$$ -->
+      <section class="showcase container">
+        <div class="showcase_text">
+          <h2>LE Super Rare Auction</h2>
+          <p>
+            We have released four limited edition NFTs early which can be bid on
+            via <a href="">OpenSea</a> .
+          </p>
+        </div>
+        <div class="showcase__cardbase">
+          <div class="showcase__cardbase-card">
+            <div class="card__img"><img src="./img/ntf-1.svg" alt="" /></div>
+            <div class="card__text">
+              <div class="card__text--left">
+                <h6>Gloop Series</h6>
+                <h3>Purple Man</h3>
+                <h4>#12983</h4>
+              </div>
+              <div class="card__text--right">
+                <h6>TOP BID</h6>
+
+                <h3><img src="./img/eth.svg" alt="" />2.99 ETH</h3>
+                <h4>1 day left</h4>
+              </div>
+            </div>
+          </div>
+          <div class="showcase__cardbase-card">
+            <div class="card__img"><img src="./img/nft-2.svg" alt="" /></div>
+            <div class="card__text">
+              <div class="card__text--left">
+                <h6>Gloop Series</h6>
+                <h3>Beige</h3>
+                <h4>#12983</h4>
+              </div>
+              <div class="card__text--right">
+                <h6>TOP BID</h6>
+
+                <h3><img src="./img/eth.svg" alt="" />2.99 ETH</h3>
+                <h4>1 day left</h4>
+              </div>
+            </div>
+          </div>
+          <div class="showcase__cardbase-card">
+            <div class="card__img"><img src="./img/ntf-3.svg" alt="" /></div>
+            <div class="card__text">
+              <div class="card__text--left">
+                <h6>Gloop Series</h6>
+                <h3>Red Man</h3>
+                <h4>#12983</h4>
+              </div>
+              <div class="card__text--right">
+                <h6>TOP BID</h6>
+
+                <h3><img src="./img/eth.svg" alt="" />2.99 ETH</h3>
+                <h4>1 day left</h4>
+              </div>
+            </div>
+          </div>
+          <div class="showcase__cardbase-card">
+            <div class="card__img"><img src="./img/ntf-4.svg" alt="" /></div>
+            <div class="card__text">
+              <div class="card__text--left">
+                <h6>Gloop Series</h6>
+                <h3>Green</h3>
+                <h4>#12983</h4>
+              </div>
+              <div class="card__text--right">
+                <h6>TOP BID</h6>
+
+                <h3><img src="./img/eth.svg" alt="" />2.99 ETH</h3>
+                <h4>1 day left</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- === FOOTER === -->
+    <footer class="footer">
+      <section class="footer-upsell">
+        <div class="footer-upsell__text">
+          <h5>Launching Soon</h5>
+          <strong><h1>An NFT like no other</h1></strong>
+          <p>
+            Don’t miss out on the release of our new NFT. Sign up below to
+            receive updates.
+          </p>
+          <button class="button">Sign Up</button>
+        </div>
+      </section>
+
+      <section class="footer-bottom container">
+        <div class="footer-bottom__text">
+          <div class="footer-bottom__text-top">
+            <img src="./img/logo.svg" alt="" />
+            <p>Exclusive NFT Collection</p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-tiktok"></i>
+          </div>
+          <div class="footer-bottom__text-middle">
+            <div class="footer-bottom__text-middle-1">
+              <h5>ABOUT</h5>
+              <p>About</p>
+              <p>Terms</p>
+              <p>Legal</p>
+            </div>
+            <div class="footer-bottom__text-middle-2">
+              <h5>NFT</h5>
+              <p>OpenSea</p>
+              <p>Maker</p>
+              <p>Learn</p>
+            </div>
+            <div class="footer-bottom__text-middle-3">
+              <h5>CONTACT</h5>
+              <p>Press</p>
+              <p>Support</p>
+            </div>
+            <div class="footer-bottom__text-middle-4">
+              <h5>SOCIAL</h5>
+              <p>Twitter</p>
+              <p>Instagram</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom_last">
+          <div class="footer-bottom_last-left">
+            <p>© Copyright 2022 NFTlanding</p>
+          </div>
+          <div class="footer-bottom_last-right">
+            <p>Launching August 2022</p>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
 </html>
