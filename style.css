@@ -14,6 +14,7 @@ body {
   font-family: Inter, sans-serif;
   color: var(--dark1);
   margin: 0;
+  /* font-size: 0px; */
 }
 
 .container {
@@ -155,6 +156,7 @@ a {
   padding-top: 48px;
   padding-bottom: 48px;
   position: relative;
+  overflow: hidden;
 }
 
 .hero::before {
@@ -204,6 +206,7 @@ a {
     "logo3 logo5";
   align-items: center;
   gap: 27px 68px;
+  overflow: hidden;
 }
 
 .press > * {
